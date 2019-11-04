@@ -1,0 +1,29 @@
+Od dziś też będę zwaracał uwagę na to czy nie tylko kod działa ale:
+a) czy składanie jest ładna i zgodna ze standardami
+b) czy kod jest zabezpieczony przed wprowadzaniem niepoprawnych danych
+   (np jeśli prosimy o liczbę a dostaniemy znaki poprośmy użytkownika o podanie danej jeszcze raz)
+c) czy metody są udokumentowane a co ciekawsze fragmentu kodu opatrzone komentarzem.
+d) parametryzacja, im większy wpływ na program i jakieś parametry tym fajniej :)
+e) wydzielanie uniwersalnych fragmentów kodów do osobnych funckji
+
+Zadania:
+1) Prośba o przepisanie dotychczasowych proagramów z wykorzystaniem definiowania własnych funkcji i wytycznych powyżej
+2) Stworzenie "programu nakładki" na dotychczasowe programiki.
+   Po wyborze danego programu z "menu" uruchomi się odpowiedni i po wykonaniu danej operacji zapyta czy wykonać inny program.
+   Sugeruje by każdy "podprogram był oddzielną funkcją".
+   Miejmy na uwadze to by w przyszłości ten program rozwijać podpinając kolejny "podprogram" - powinno to być najprostsze jak się da (np tylko zmiana menu i jakiegoś jednego ifa?:) )
+   Przykład przy uruchomieniu:
+   "
+   Witaj w Multitool Python Program by iSA - wersja beta ;)
+   Wybierz program który cię interesuje:
+   1) Rysowanie kwadratu o zadanych parametrach
+   2) Rysowanie piramidy o określonej wysokości
+   3) Rozmienianie pieniędzy
+   4) Przeliczanie F->C
+   5) Przeliczanie C->F
+   6) ...
+   7) ...
+   R) Wybierz program losowo bo nie wiem czego szukam:)
+   X) Wyjście z programu
+   Twój wybór: _
+   "
