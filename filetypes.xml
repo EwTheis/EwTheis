@@ -5,6 +5,7 @@
       <mapping pattern="homework06" type="PLAIN_TEXT" />
       <mapping pattern="homework04" type="PLAIN_TEXT" />
       <mapping pattern="homework03" type="PLAIN_TEXT" />
+      <mapping ext="pkl" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
