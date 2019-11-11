@@ -1,0 +1,4 @@
+
+Znalezionych zdañ jest: 10
+Znalezionych wyrazów jest: 180
+Znalezionych liczb jest: 3
