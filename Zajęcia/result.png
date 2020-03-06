@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wallpaper List - Page </title>
+        <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Selective super retina wallpapers for iPhone iPad iOS Android 4k desktop PC  Mac &amp; suitable hd backgrounds for Samsung Galaxy HTC Sony LG Blackberry">
+        <meta name="keywords" content="">
+        <meta property="og:title" content="Wallpaper List - Page ">
+        <meta property="og:url">
+        <meta property="og:site_name" content="Wallpaper List">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="website">
+        
+        <meta name="apple-itunes-app" content="app-id=920985504">
+        
+            <meta http-equiv="refresh" content="5400">
+        
+        <link rel="shortcut icon" href="/static/fe/images/logo1.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="/modules/photo/user/view/images/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="apple-touch-icon-precomposed" sizes="512x512" href="/static/fe/images/app-512.png">
+        <script type="text/javascript" src="/static/jquery-3.1.1.min.js?1538576720"></script>
+        <script src="/static/infinite-scroll.pkgd.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/static/fe/user.css">
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0]
+        if (d.getElementById(id)) return
+        js = d.createElement(s); js.id = id
+        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=586511584891073"
+        fjs.parentNode.insertBefore(js, fjs)
+        }(document, 'script', 'facebook-jssdk'))
+        </script>
+        <div id="header" class="center"><a href="/" class="logo inline-block"><img src="/static/fe/images/logo1.png" width="48" title="Wallpaper list - Selective 4k wallpapers for iOS, Android, Mac and Desktop pc" alt="Wallpaper list - Selective 4k wallpapers for iOS, Android, Mac and Desktop pc" align="left" style="margin:-15px 10px 0px 0px">WallpaperList</a></div>
+        <div class="center">
+            <div class="inline-block">
+            <ul class="nav">
+                <li><a href="/" title="Latest wallpapers">All</a></li>
+                <li><a href="/top-today" title="Most downloaded wallpapers today">Today</a></li>
+                <li><a href="/top-this-week" title="Most downloaded wallpapers this week">This week</a></li>
+                <li><a href="/top-this-month" title="Most downloaded wallpapers this month">This month</a></li>
+                <li><a href="/lists" title="All best wallpapers list by tags">Lists</a></li>
+                <li class="spec"><a href="https://itunes.apple.com/us/app/wallpaper-list/id920985504?mt=8" title="Wallpaper List app for iPhone iPad iOS" target="_blank">iOS</a></li>
+                <li class="spec"><a href="https://play.google.com/store/apps/details?id=com.bitbrick.wallpaperlist" title="Wallpaper List app for Android devices" target="_blank">Android</a></li>
+            </ul>
+            <div class="spacer"></div>
+            <form method="post" action="/search" class="search_form" onsubmit="return searchSubmit()">
+              <input name="keyword" placeholder="Enter keywords ..." value="" onfocus="javascript:$('#catlist').show()" class="search">
+              <button type="submit" class="search_btn"></button>
+            </form>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div id="catlist" class="container center hidden">
+            <div class="inline-block">
+                <ul class="nav">
+                    
+                    
+                    <li><a href="/category/nature-landscape-6/" title="Nature - Landscape wallpapers">Nature - Landscape</a></li>
+                    
+                    <li><a href="/category/city-travel-7/" title="City - Travel wallpapers">City - Travel</a></li>
+                    
+                    <li><a href="/category/flowers-plants-16/" title="Flowers - plants wallpapers">Flowers - plants</a></li>
+                    
+                    <li><a href="/category/people-celebs-5/" title="People - Celebs wallpapers">People - Celebs</a></li>
+                    
+                    <li><a href="/category/animals-2/" title="Animals wallpapers">Animals</a></li>
+                    
+                    <li><a href="/category/vehicles-4/" title="Vehicles wallpapers">Vehicles</a></li>
+                    
+                    <li><a href="/category/3d-abstract-1/" title="3D - Abstract wallpapers">3D - Abstract</a></li>
+                    
+                    <li><a href="/category/movies-8/" title="Movies wallpapers">Movies</a></li>
+                    
+                    <li><a href="/category/holiday-9/" title="Holiday wallpapers">Holiday</a></li>
+                    
+                    <li><a href="/category/cartoon-3/" title="Cartoon wallpapers">Cartoon</a></li>
+                    
+                    <li><a href="/category/textures-minimal-13/" title="Textures - Minimal wallpapers">Textures - Minimal</a></li>
+                    
+                    <li><a href="/category/food-drinks-17/" title="Food &amp; Drinks wallpapers">Food &amp; Drinks</a></li>
+                    
+                    <li><a href="/category/games-10/" title="Games wallpapers">Games</a></li>
+                    
+                    <li><a href="/category/space-12/" title="Space wallpapers">Space</a></li>
+                    
+                    <li><a href="/category/sports-11/" title="Sports wallpapers">Sports</a></li>
+                    
+                    <li><a href="/category/others-14/" title="Others wallpapers">Others</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+        function searchSubmit() {
+            var keyword = $("input[name='keyword']").val().trim()
+            location.href = "/search/" + keyword.replace(/[^0-9a-z]/gi,"-")
+            return false
+        }
+        function mobimenu()
+        {
+            if($(".nav").is(":visible"))
+            {
+                $(".nav").hide();
+                $(document).unbind("click");
+            }
+            else
+            {
+                $(".nav").show();
+                $(document).bind("click",function(e) {
+                if($(e.target).parent().attr("class")!="mobimenu" && $(e.target).parents('ul').attr('class')!="nav") $(".nav").hide();
+                });
+            }
+        }
+        </script> 
+        <div class="clear"></div>
+        <div class="spacer"></div>
+        
+	<div class='main'>
+        
+
+<div class="center" style='background:#222'>
+    
+	<div class="container">
+		<ul id='photolist' class='itemlist'>
+            
+			
+				<li>
+					<a href='/blue-blue-sea-ocean-13788/' title="blue blue sea ocean">
+						<span>blue blue sea ocean</span>
+                        <img src="/uploads/wallpaper/thumb/blu/blue-blue-sea-ocean-wallpaper-59be9a8b72a6b.jpg" alt="13788" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/wave-sea-blue-water-nature-10852/' title="wave sea blue water nature">
+						<span>wave sea blue water nature</span>
+                        <img src="/uploads/wallpaper/thumb/wav/wave-sea-blue-water-nature-wallpaper-59bd6bd1e3ba5.jpg" alt="10852" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/drops-white-watter-minimal-simple-pattern-10851/' title="drops white watter minimal simple pattern">
+						<span>drops white watter minimal simple pattern</span>
+                        <img src="/uploads/wallpaper/thumb/dro/drops-white-watter-minimal-simple-pattern-wallpaper-59bd6bc915ac1.jpg" alt="10851" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/taylor-swift-red-lips-singer-artist-10850/' title="taylor swift red lips singer artist">
+						<span>taylor swift red lips singer artist</span>
+                        <img src="/uploads/wallpaper/thumb/tay/taylor-swift-red-lips-singer-artist-wallpaper-59bd6bc5bf9b0.jpg" alt="10850" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/garden-moss-stone-nature-road-city-10849/' title="garden moss stone nature road city">
+						<span>garden moss stone nature road city</span>
+                        <img src="/uploads/wallpaper/thumb/gar/garden-moss-stone-nature-road-city-wallpaper-59bd6bc2bacc2.jpg" alt="10849" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/big-hero-6-chracters-dark-all-disney-art-illust-10848/' title="big hero 6 chracters dark all disney art illust">
+						<span>big hero 6 chracters dark all disney art illust</span>
+                        <img src="/uploads/wallpaper/thumb/big/big-hero-6-chracters-dark-all-disney-art-illust-wallpaper-59bd6bbcc7a98.jpg" alt="10848" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/good-morning-posco-gradation-blur-10847/' title="good morning posco gradation blur">
+						<span>good morning posco gradation blur</span>
+                        <img src="/uploads/wallpaper/thumb/goo/good-morning-posco-gradation-blur-wallpaper-59bd6bba0db2c.jpg" alt="10847" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/suji-girl-kpop-10846/' title="suji girl kpop">
+						<span>suji girl kpop</span>
+                        <img src="/uploads/wallpaper/thumb/suj/suji-girl-kpop-wallpaper-59bd6bb374556.jpg" alt="10846" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/twice-kpop-girl-flower-tzuyu-fan-10845/' title="twice kpop girl flower tzuyu fan">
+						<span>twice kpop girl flower tzuyu fan</span>
+                        <img src="/uploads/wallpaper/thumb/twi/twice-kpop-girl-flower-tzuyu-fan-wallpaper-59bd6bacd1224.jpg" alt="10845" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/bird-sky-sunshine-flare-blue-nature-animal-vignette-10844/' title="bird sky sunshine flare blue nature animal vignette">
+						<span>bird sky sunshine flare blue nature animal vignette</span>
+                        <img src="/uploads/wallpaper/thumb/bir/bird-sky-sunshine-flare-blue-nature-animal-vignette-wallpaper-59bd6ba730915.jpg" alt="10844" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/cat-box-blue-illust-animal-art-minimal-10843/' title="cat box blue illust animal art minimal">
+						<span>cat box blue illust animal art minimal</span>
+                        <img src="/uploads/wallpaper/thumb/cat/cat-box-blue-illust-animal-art-minimal-wallpaper-59bd6ba466035.jpg" alt="10843" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/starwars-lego-episode-6-return-of-jedi-art-film-10842/' title="starwars lego episode 6 return of jedi art film">
+						<span>starwars lego episode 6 return of jedi art film</span>
+                        <img src="/uploads/wallpaper/thumb/sta/starwars-lego-episode-6-return-of-jedi-art-film-wallpaper-59bd6b9f893f7.jpg" alt="10842" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/emma-watson-smile-cannes-film-girl-10841/' title="emma watson smile cannes film girl">
+						<span>emma watson smile cannes film girl</span>
+                        <img src="/uploads/wallpaper/thumb/emm/emma-watson-smile-cannes-film-girl-wallpaper-59bd6b9cd926b.jpg" alt="10841" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/xmen-apocalypse-poster-film-hero-destroy-10840/' title="xmen apocalypse poster film hero destroy">
+						<span>xmen apocalypse poster film hero destroy</span>
+                        <img src="/uploads/wallpaper/thumb/xme/xmen-apocalypse-poster-film-hero-destroy-wallpaper-59bd6b9a0edc7.jpg" alt="10840" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/sunny-town-country-nature-city-dark-white-10839/' title="sunny town country nature city dark white">
+						<span>sunny town country nature city dark white</span>
+                        <img src="/uploads/wallpaper/thumb/sun/sunny-town-country-nature-city-dark-white-wallpaper-59bd6b978a105.jpg" alt="10839" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/kpop-girl-cute-kriesha-chu-10838/' title="kpop girl cute kriesha chu">
+						<span>kpop girl cute kriesha chu</span>
+                        <img src="/uploads/wallpaper/thumb/kpo/kpop-girl-cute-kriesha-chu-wallpaper-59bd6b94ade32.jpg" alt="10838" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/1h-dark-parking-car-10837/' title="1h dark parking car">
+						<span>1h dark parking car</span>
+                        <img src="/uploads/wallpaper/thumb/1h-/1h-dark-parking-car-wallpaper-59bd6b920eff7.jpg" alt="10837" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/nature-white-leaf-grass-garden-flower-pattern-10836/' title="nature white leaf grass garden flower pattern">
+						<span>nature white leaf grass garden flower pattern</span>
+                        <img src="/uploads/wallpaper/thumb/nat/nature-white-leaf-grass-garden-flower-pattern-wallpaper-59bd6b8d08f0a.jpg" alt="10836" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/cristiano-ronaldo-7-real-madrid-soccer-10835/' title="cristiano ronaldo 7 real madrid soccer">
+						<span>cristiano ronaldo 7 real madrid soccer</span>
+                        <img src="/uploads/wallpaper/thumb/cri/cristiano-ronaldo-7-real-madrid-soccer-wallpaper-59bd6b8a87792.jpg" alt="10835" align='center' />
+                    </a>
+                </li>
+            
+				<li>
+					<a href='/starwars-episode-1-art-illust-poster-film-10834/' title="starwars episode 1 art illust poster film">
+						<span>starwars episode 1 art illust poster film</span>
+                        <img src="/uploads/wallpaper/thumb/sta/starwars-episode-1-art-illust-poster-film-wallpaper-59bd6b84b0ce4.jpg" alt="10834" align='center' />
+                    </a>
+                </li>
+            
+        </ul>
+        <div class='clear'></div>
+    </div>
+</div>
+<div class="spacer"></div>
+
+<div class="center">
+    <div class="pagination">
+        <li>
+            <a id='nextpage' href="/page/2/">Next page</a>
+        </li>
+    </div>
+</div>
+
+<script>
+$(function() {
+    $('#photolist').infiniteScroll({
+        
+        path: '#nextpage',
+        append: '.itemlist li',
+        history: false,
+    });
+});
+</script>
+
+    </div>
+
+        
+<div class="clear"></div>
+    <div class="spacer"></div>
+    <div class="container">
+        <div class="footer center">
+            <div>
+            <a title='Download wallpaper list app on iOS' target='_blank' href='https://itunes.apple.com/us/app/wallpaper-list/id920985504?mt=8'><img src='/static/fe/images/appstore.png' width="150" /></a>
+            <a title='Download wallpaper list app on Android' target='_blank' href='https://play.google.com/store/apps/details?id=com.bitbrick.wallpaperlist'><img src='/static/fe/images/googleplay.png' width="150" /></a>
+            </div>
+            <div class="spacer"></div>
+            
+            <div class="faded">DISCLAIMER: All wallpapers and backgrounds found here are believed to be in the "public domain". Most of the images displayed are of unknown origin. We do not intend to infringe any legitimate intellectual right, artistic rights or copyright. If you are the rightful owner of any of the pictures/wallpapers posted here, and you do not want it to be displayed or if you require a suitable credit, then please <span class="contact">contact us</span> and we will immediately do whatever is needed either for the image to be removed or provide credit where it is due. All the content of this site are free of charge and therefore we do not gain any financial benefit from the downloads of any images/wallpaper.</div>
+            
+                Copyright © WallpaperList.com
+            <font color="#888">- </font>
+            <span class="contact1">Contact us</span>
+            
+        </div>
+    </div>
+<script>
+$(window).resize(function () {
+    dw = $(window).width()
+    HideCol(dw)
+})
+
+
+HideCol($(window).width())
+function HideCol(dw)
+{
+    if(dw<710)
+    {
+        var a = $('.navc .nav li[rel=cat]').html()
+        if(!a) $('.navc .nav').append($('.box2 .list').html()+'<li rel="cat"><a href="javascript:mobimenu();">^ Hide this menu ^</a></li>')
+    }
+    if(dw>710) $('.navc .nav li[rel=cat]').hide()
+    if(dw<990) $("#rightcol").hide()
+    if(dw>=990) $("#rightcol").show()
+}
+loadcontact('report','{$LANGM.report_us}')
+loadcontact('contact','contact us')
+loadcontact('contact1','Contact us')
+<!--
+
+
+
+
+function loadcontact(a,b) { coded = "mnamnav7D@KavLG.ena"
+    key = "BVivbZS2tH94lPUJFfN3sLDhgCRmTXxGMo8Qcd1prkqKw5au0z6ynjIe7WAOYE"
+    shift=coded.length
+    link=""
+    for (i=0; i<coded.length; i++) {
+        if (key.indexOf(coded.charAt(i))==-1) {
+            ltr = coded.charAt(i)
+            link += (ltr)
+        }
+        else {     
+            ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+            link += (key.charAt(ltr))
+        }
+    }
+    $('.'+a).html("<a href='mailto:"+link+"'>"+b+"</a>")
+}
+
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga')
+
+ga('create', 'UA-1594947-17', 'wallpaperlist.com')
+ga('send', 'pageview')
+</script>
+
+    </body>
+</html>
